@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <title>CP Index</title>
+    <th:block th:replace="/cp/layout/head :: head"/>
+</head>
+
+<body>
+
+<!-- Begin page -->
+<div id="wrapper">
+
+    <!-- Topbar Start -->
+    <div class="navbar-custom">
+        <th:block th:replace="/cp/layout/topnav-menu-right :: topnav-menu-right"/>
+
+        <!-- LOGO -->
+        <div class="logo-box">
+            <a href="index.html" class="logo text-center">
+                        <span class="logo-lg">
+                            <img src="/assets/images/anhlogothegioididong.webp" alt="" height="55">
+
+                        </span>
+                <span class="logo-sm">
+                            <img src="/assets/images/anhlogothegioididong.webp" alt="" height="24">
+                        </span>
+            </a>
+        </div>
+
+        <th:block th:replace="/cp/layout/topnav-menu-left :: topnav-menu-left"/>
+    </div>
+    <!-- end Topbar -->
+
+    <!-- ========== Left Sidebar Start ========== -->
+    <div class="left-side-menu">
+
+        <div class="slimscroll-menu">
+
+            <!--- Sidemenu -->
+            <th:block th:replace="/cp/layout/sidebar-menu :: sidebar-menu"/>
+            <!-- End Sidebar -->
+
+            <div class="clearfix"></div>
+
+        </div>
+        <!-- Sidebar -left -->
+
+    </div>
+    <!-- Left Sidebar End -->
+
+    <!-- ============================================================== -->
+    <!-- Start Page Content here -->
+    <!-- ============================================================== -->
+
+    <div class="content-page">
+        <div class="content">
+
+            <!-- Start Content-->
+            <div class="container-fluid">
+
+                <!-- start page title -->
+                <div class="row">
+                    <div class="col-12">
+                        <div class="page-title-box">
+                            <div class="page-title-right">
+                                <ol class="breadcrumb m-0">
+                                    <li class="breadcrumb-item"><a href="javascript: void(0);">Minton</a></li>
+                                    <li class="breadcrumb-item active">Dashboard</li>
+                                </ol>
+                            </div>
+                            <h4 class="page-title"> Chào Mừng Bạn Đến Với Thế Giới Di Động !</h4>
+                        </div>
+                    </div>
+                </div>
+                <!-- end page title -->
+
+                <div class="row">
+                    <!--                    Content-->
+                </div>
+                <!-- end row -->
+
+            </div> <!-- container -->
+
+        </div> <!-- content -->
+
+        <!-- Footer Start -->
+        <th:block th:replace="/cp/layout/footer :: footer" />
+        <!-- end Footer -->
+
+    </div>
+
+    <!-- ============================================================== -->
+    <!-- End Page content -->
+    <!-- ============================================================== -->
+
+
+</div>
+<!-- END wrapper -->
+
+<!-- Right Sidebar -->
+<th:block th:replace="/cp/layout/right-bar :: right-bar" />
+<!-- /Right-bar -->
+
+<!-- Right bar overlay-->
+<div class="rightbar-overlay"></div>
+
+<th:block th:replace="/cp/layout/script :: script"/>
+
+</body>
+</html>

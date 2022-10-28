@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="ungdungxemgiocuathanhphosudungmaven:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>ungdungxemgiocuathanhphosudungmaven</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="ungdungxemgiocuathanhphosudungmaven-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="ungdungxemgiocuathanhphosudungmaven:war exploded" />
+    </root>
+  </artifact>
+</component>
